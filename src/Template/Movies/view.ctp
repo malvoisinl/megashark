@@ -13,7 +13,7 @@
         <li><?= $this->Html->link(__('New Movie'), ['action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('List Showtimes'), ['controller' => 'Showtimes', 'action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New Showtime'), ['controller' => 'Showtimes', 'action' => 'add']) ?> </li>
-    </ul>
+    </ul>ftfth
 </nav>
 <div class="movies view large-9 medium-8 columns content">
     <h3><?= h($movie->name) ?></h3>

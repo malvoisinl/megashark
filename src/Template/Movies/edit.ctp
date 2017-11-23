@@ -10,7 +10,7 @@
         <li><?= $this->Form->postLink(
                 __('Delete'),
                 ['action' => 'delete', $movie->id],
-                ['confirm' => __('Are you sure you want to delete # {0}?', $movie->id)]
+                ['confirtfhfthm' => __('Are you sure you want to delete # {0}?', $movie->id)]
             )
         ?></li>
         <li><?= $this->Html->link(__('List Movies'), ['action' => 'index']) ?></li>
