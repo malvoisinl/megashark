@@ -17,24 +17,24 @@
 </nav>
 <div class="rooms view large-9 medium-8 columns content">
 <?= debug($showtimes->toArray())?>
+<?php
+foreach($showtime as $Showtime){
+    echo $Showtime;
+}
+?>
     <h3><?= h($room->name) ?></h3>
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
-                <th scope="col"><?= $this->Paginator->sort('horaires') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('lundi') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('mardi') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('mercredi') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('jeudi') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('vendredi') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('samedi') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('dimanche') ?></th>
+                <th scope="col"><?php foreach($day as $days){echo $days." ";} ?></th>
+               
 
             </tr>
         </thead>
         
         <tbody>
         <?php
+
             for ($i=8;$i<=24;$i+=2){
                 ?>
                 <tr>
@@ -42,6 +42,8 @@
                 <?php echo $i.":00";?>
                 </td>
                 </tr>
+
+
         <?php
             }
         ?>
